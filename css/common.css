@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --main-font: "Crimson Text", serif;
+    --sub-font: "Yu Gothic UI", sans-serif;
+    --bg-white: #ffffff;
+    --bg-gray: #555555;
+    --heading-bg-gray: #6A6A6A;
+    --nav-bg-gray: rgba(106, 106, 106, 0.3);
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray: #6A6A6A;
+    --heading:20;
+    --heading-bg:10;
+  }
+
+/* ------------------------------
+    common
+------------------------------ */
+html {
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, address, time,
+ul, ol, li, dl, dt, dd, section,
+table, th, td, img,
+form, input, button, textarea, select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 1;
+    list-style-type: none;
+    font-style: normal;
+    font-weight: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    resize: none;
+    outline: none;
+    background: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    outline: 1px solid transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+a img {
+    outline: 1px solid transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+a:hover {
+    cursor: pointer;
+}
+
+img, object {
+    vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
