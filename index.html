@@ -19,7 +19,7 @@
 <script src="./js/common.js" defer></script>
 </head>
 <body>
-
+<div id="bg"></div>
 <header class="header js-header">
     <div class="inner header__inner">
         <svg class="header__mark" xmlns="http://www.w3.org/2000/svg" width="40" height="31" fill="none"><path d="M28.512 31c-1.119 0-2.083-.45-2.894-1.348-.782-.898-1.467-2.05-2.054-3.454a44.256 44.256 0 01-1.551-4.338c-1.035-3.398-1.468-5.42-1.3-6.065a179.533 179.533 0 01-4.277 5.56c-1.202 1.46-2.18 2.555-2.935 3.285-3.298 3.201-6.639 4.802-10.02 4.802-1.007 0-1.832-.211-2.475-.632C.336 28.389 0 27.687 0 26.704c0-.618.14-1.278.42-1.98.279-.73.628-1.418 1.048-2.064.419-.645.838-1.179 1.257-1.6.923-.927 1.691-1.39 2.306-1.39.112 0 .168.028.168.084 0 .14-.21.38-.629.716a10.754 10.754 0 00-2.432 2.738c-.643 1.01-.964 1.937-.964 2.78 0 1.572 1.104 2.316 3.312 2.232 3.606-.14 8.61-4.52 15.01-13.141.364-.478.672-.815.923-1.011l-.67-.253c-.364.14-.657.21-.881.21-.587 0-.88-.238-.88-.715 0-.646.433-1.067 1.3-1.264.53-.14 1.215.099 2.054.716a628.254 628.254 0 013.144-3.538c1.035-1.123 1.971-2.036 2.81-2.738.838-.73 1.509-1.095 2.012-1.095.671 0 1.006.31 1.006.927 0 .253-.07.52-.21.8-.111.253-.25.38-.418.38-.168.027-.252-.057-.252-.253 0-.14.084-.31.252-.506v-.168c0-.169-.056-.295-.168-.38-.727-.477-2.963 1.896-6.709 7.119.308.028.63.056.965.084h1.132c6.485 0 10.538-1.685 12.159-5.054.335-.73.503-1.404.503-2.022 0-1.236-.573-2.317-1.719-3.243-1.034-.843-2.404-1.404-4.109-1.685a27.725 27.725 0 00-5.031-.463C22.99.927 19.036 1.952 14.843 4c-5.088 2.5-7.631 5.434-7.631 8.803 0 1.095.713 1.643 2.138 1.643 1.314 0 2.795-.533 4.444-1.6 1.426-.955 2.404-1.924 2.936-2.907.195-.365.377-.547.545-.547.195 0 .251.112.167.337-.53 1.572-1.719 2.92-3.564 4.043-1.789 1.095-3.633 1.643-5.534 1.643-2.264 0-3.313-.73-3.145-2.19.42-3.679 2.67-6.81 6.75-9.393C16.004 1.278 20.896 0 26.626 0c2.18 0 4.29.197 6.331.59 2.069.393 3.746 1.123 5.031 2.19C39.33 3.903 40 5.223 40 6.74c0 .645-.154 1.347-.461 2.105-.475 1.095-1.202 2.036-2.18 2.822-.979.758-2.11 1.376-3.397 1.853a21.095 21.095 0 01-4.067 1.053 26.605 26.605 0 01-4.15.337c-.728 0-1.426-.028-2.097-.084a16.436 16.436 0 01-1.803-.253c.168.534.461 1.503.88 2.907.42 1.404.95 3.229 1.594 5.475.195.618.46 1.292.796 2.022.364.73.769 1.418 1.216 2.064.448.646.923 1.18 1.426 1.6.53.422 1.062.632 1.593.632 1.174 0 2.152-1.193 2.935-3.58.14-.562.294-.843.461-.843.14 0 .266.267.378.8.028.085.042.197.042.338 0 .73-.392 1.628-1.174 2.695C30.957 30.228 29.797 31 28.512 31z" fill="#000"/></svg>
@@ -146,34 +146,71 @@
 
 <section class="skill" id="skill">
     <div class="inner">
-        <div class="heading">
-            <div class="heading__wrap">
-                <h2 class="heading__copy split-text js-split-target js-observe-target">Skill</h2>
-                <span class="heading__lead split-text js-split-target js-observe-target"> - できること -</span>
+        <div class="inner1">
+            <div class="heading">
+                <div class="heading__wrap">
+                    <h2 class="heading__copy split-text js-split-target js-observe-target">Skill</h2>
+                    <span class="heading__lead split-text js-split-target js-observe-target"> - できること -</span>
+                </div>
+                <span class="heading__copy--bg split-text js-split-target js-observe-target">Skill</span>
             </div>
-            <span class="heading__copy--bg split-text js-split-target js-observe-target">Skill</span>
+            <div class="inner2">
+                <div class="js-wrap">
+                    <div class="js-container">
+                        <div class="js-item">
+                            <div class="skill__item">
+                                <p class="skill__label">01</p>
+                                <h3 class="skill__heading js-observe-target animation-fadein">HTMLコーディング</h3>
+                                <p class="skill__txt js-observe-target animation-fadein">
+                                    デザインデータ（Figma・XD・PSD）をもとに、正確かつ美しいHTMLコーディングを行います。
+                                    HTML・CSS・JavaScript（jQuery含む）を活用し、動きのある表現やユーザー体験を向上させるアニメーションの実装も可能です。
+                                    コードの可読性と保守性を重視し、修正や追加がしやすい設計を心がけます。
+                                    品質の高いコーディングで、デザインの魅力を最大限に引き出します。
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="js-item">
+                            <div class="skill__item">
+                                <p class="skill__label">02</p>
+                                <h3 class="skill__heading js-observe-target animation-fadein">アニメーション実装</h3>
+                                <p class="skill__txt js-observe-target animation-fadein">
+                                    　GSAPやjQueryを活用し、動きのあるインタラクティブなWebサイトを制作します。
+                                    スクロールアニメーションやフェードイン・スライドなどの演出により、視覚的に魅力的なデザインを実現。
+                                    ユーザー体験を向上させる滑らかなアニメーションや、クリック・ホバー時の動作も実装可能です。
+                                    パフォーマンスを意識した軽量なコード設計を心がけ、ページ速度を落とさずに動きを取り入れます。
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="js-item">
+                            <div class="skill__item">
+                                <p class="skill__label">03</p>
+                                <h3 class="skill__heading js-observe-target animation-fadein">WordPress構築</h3>
+                                <p class="skill__txt js-observe-target animation-fadein">
+                                    　デザインデータ（Figma・XD・PSD）からWordPressサイトを構築し、更新しやすい管理画面を提供します。
+                                    オリジナルテーマ制作やカスタム投稿タイプ、ACFを活用した柔軟なコンテンツ管理に対応。
+                                    お問い合わせフォームの設置やAPI連携などのカスタマイズも可能。
+                                    サイトの目的や要望に応じて、最適なWordPressサイトを制作します。
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="js-item">
+                            <div class="skill__item">
+                                <p class="skill__label">04</p>
+                                <h3 class="skill__heading js-observe-target animation-fadein">サーバー・ドメイン設定</h3>
+                                <p class="skill__txt js-observe-target animation-fadein">
+                                    　Webサイトの運用に必要なサーバー・ドメインの取得・設定をサポートします。<br>
+                                    最適なレンタルサーバーの選定から、ドメイン取得、SSL設定（https化）まで対応可能。<br>
+                                    WordPressのインストールや初期設定も行い、すぐに運用を開始できる環境を構築します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
         </div>
-
-        <div class="skill__wrap">
-            <h3 class="skill__heading skill__heading--01 js-observe-target animation-fadein">HTMLコーディング</h3>
-            <span class="skill__line"></span>
-            <p class="js-observe-target animation-fadein">
-                　デザインデータ（Figma・XD・PSDなど）を元に、コーディングを行います。<br>
-                デザインの細部まで忠実に再現し、意図した通りの美しいWebサイトを構築します。<br>
-                　また、HTML・CSS・jQueryを適切に組み合わせ、
-                動きのあるサイトやユーザー体験を向上させるアニメーションの実装も可能です。<br>
-                デザインとコードの整合性を大切にし、視認性や操作性を考慮したコーディングを心がけています。
-            </p>
-        </div>
-
-        <!-- <div class="skill__wrap">
-            <h3 class="skill__heading skill__heading--02 js-observe-target animation-fadein">WordPressサイト構築</h3>
-            <p class="js-observe-target animation-fadein">
-                　WordPressを使用したWebサイトの新規構築・カスタマイズ・運用サポートを承ります。<br>
-                コーポレートサイトやブログ、ランディングページなど、目的に応じた最適な構築を行います。<br>
-                使いやすさと管理のしやすさを重視し、長く安心して運用できるサイトを構築いたします。
-            </p>
-        </div> -->
 
     </div>
 </section>

@@ -403,3 +403,21 @@ const loadingAnimation = () => {
 
     splitText();
     loadingAnimation();
+
+
+const listWrapperEl = document.querySelector('.js-wrap');
+const listEl = document.querySelector('.js-container');
+
+gsap.to(listEl, {
+  x: () => -(listEl.clientWidth - listWrapperEl.clientWidth),
+  ease: 'none',
+  scrollTrigger: {
+    trigger: '.inner1',
+    start: 'top top', 
+    end: () => `+=${listEl.clientWidth - listWrapperEl.clientWidth}`,
+    scrub: true,
+    pin: true,
+    anticipatePin: 1,
+    invalidateOnRefresh: true,
+  },
+});
